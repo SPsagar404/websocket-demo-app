@@ -10,5 +10,5 @@ public interface DeploymentService {
     Optional<Deployment> getDeploymentById(Long id);
     Deployment createDeployment(Deployment deployment);
     Deployment updateDeployment(Long id, Deployment updatedDeployment);
-    void deleteDeployment(Long id);
+    boolean deleteDeployment(Long id);
 }

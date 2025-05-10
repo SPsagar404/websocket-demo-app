@@ -42,7 +42,8 @@ public class DeploymentServiceImpl implements DeploymentService {
     }
 
     @Override
-    public void deleteDeployment(Long id) {
+    public boolean deleteDeployment(Long id) {
         deploymentRepository.deleteById(id);
+        return false;
     }
 }
